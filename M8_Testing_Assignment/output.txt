@@ -1,0 +1,17 @@
+PS D:\M8_Testing_Assignment> npm test
+
+> m8_testing_assignment@1.0.0 test
+> jest
+
+ PASS  tests/DOMManipulation.spec.js
+ PASS  tests/DelayedGreeting.spec.js
+ PASS  tests/StringUtilities.spec.js                                    
+ PASS  tests/FetchAndDisplayUser.spec.js
+ PASS  tests/ArrayIndex.spec.js                                         
+ PASS  tests/NotificationService.spec.js
+
+Test Suites: 6 passed, 6 total
+Tests:       11 passed, 11 total
+Snapshots:   0 total
+Time:        2.438 s
+Ran all test suites.

@@ -1,0 +1,181 @@
+Started by user keshav a
+
+Running as SYSTEM
+Building in workspace D:\jenkins_home\workspace\Flask_app
+The recommended git tool is: NONE
+No credentials specified
+ > git.exe rev-parse --resolve-git-dir D:\jenkins_home\workspace\Flask_app\.git # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/helloflask/flask-examples.git # timeout=10
+Fetching upstream changes from https://github.com/helloflask/flask-examples.git
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.46.1.windows.1'
+ > git.exe fetch --tags --force --progress -- https://github.com/helloflask/flask-examples.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/main^{commit}" # timeout=10
+Checking out Revision 8d35d2dcb24e41c56d859f0aca0f7cc496d3151e (refs/remotes/origin/main)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 8d35d2dcb24e41c56d859f0aca0f7cc496d3151e # timeout=10
+Commit message: "Merge pull request #12 from crayxt/patch-1"
+First time build. Skipping changelog.
+[Flask_app] $ cmd /c call C:\Users\keshav\AppData\Local\Temp\jenkins6157390293404476367.bat
+
+D:\jenkins_home\workspace\Flask_app>REM Navigate to workspace 
+
+D:\jenkins_home\workspace\Flask_app>cd flask-examples 
+The system cannot find the path specified.
+
+D:\jenkins_home\workspace\Flask_app>REM Create virtual environment 
+
+D:\jenkins_home\workspace\Flask_app>python -m venv venv 
+
+D:\jenkins_home\workspace\Flask_app>REM Activate virtual environment 
+
+D:\jenkins_home\workspace\Flask_app>call venv\Scripts\activate 
+Looking in indexes: https://pypi.python.org/simple/
+Collecting alembic==1.5.8 (from -r requirements.txt (line 2))
+  Obtaining dependency information for alembic==1.5.8 from https://files.pythonhosted.org/packages/72/a4/97eb6273839655cac14947986fa7a5935350fcfd4fff872e9654264c82d8/alembic-1.5.8-py2.py3-none-any.whl.metadata
+  Downloading alembic-1.5.8-py2.py3-none-any.whl.metadata (7.0 kB)
+Collecting blinker==1.4 (from -r requirements.txt (line 3))
+  Downloading blinker-1.4.tar.gz (111 kB)
+     ------------------------------------ 111.5/111.5 kB 498.7 kB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting click==7.1.2 (from -r requirements.txt (line 4))
+  Obtaining dependency information for click==7.1.2 from https://files.pythonhosted.org/packages/d2/3d/fa76db83bf75c4f8d338c2fd15c8d33fdd7ad23a9b5e57eb6c5de26b430e/click-7.1.2-py2.py3-none-any.whl.metadata
+  Downloading click-7.1.2-py2.py3-none-any.whl.metadata (2.9 kB)
+Collecting cssmin==0.2.0 (from -r requirements.txt (line 5))
+  Downloading cssmin-0.2.0.tar.gz (3.2 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting email-validator==1.1.2 (from -r requirements.txt (line 6))
+  Obtaining dependency information for email-validator==1.1.2 from https://files.pythonhosted.org/packages/58/f0/39459bb868ddb4e96ee3f8b1386deeceb1bf4e53de8c18a4afdf5801f24c/email_validator-1.1.2-py2.py3-none-any.whl.metadata
+  Downloading email_validator-1.1.2-py2.py3-none-any.whl.metadata (17 kB)
+Collecting flask-assets==0.12 (from -r requirements.txt (line 7))
+  Downloading Flask-Assets-0.12.tar.gz (22 kB)
+  Installing build dependencies: started
+
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+
+  Preparing metadata (pyproject.toml): finished with status 'done'
+
+Collecting flask-caching==1.7.2 (from -r requirements.txt (line 8))
+  Obtaining dependency information for flask-caching==1.7.2 from https://files.pythonhosted.org/packages/bd/4e/c701bdcd566f26187398cf058ad2ca14c8b2f50b17a17f9076794ae2f8db/Flask_Caching-1.7.2-py2.py3-none-any.whl.metadata
+  Downloading Flask_Caching-1.7.2-py2.py3-none-any.whl.metadata (1.8 kB)
+
+Collecting flask-ckeditor==0.4.3 (from -r requirements.txt (line 9))
+  Obtaining dependency information for flask-ckeditor==0.4.3 from https://files.pythonhosted.org/packages/fa/b6/166a3e196351fa9fd291d511586015832da1eeec93ab2aad6fb4be3894a9/Flask_CKEditor-0.4.3-py2.py3-none-any.whl.metadata
+
+  WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='files.pythonhosted.org', port=443): Read timed out. (read timeout=15)")': /packages/fa/b6/166a3e196351fa9fd291d511586015832da1eeec93ab2aad6fb4be3894a9/Flask_CKEditor-0.4.3-py2.py3-none-any.whl.metadata
+
+  Downloading Flask_CKEditor-0.4.3-py2.py3-none-any.whl.metadata (1.1 kB)
+
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='pypi.org', port=443): Read timed out. (read timeout=15)")': /simple/flask-debugtoolbar/
+
+Collecting flask-debugtoolbar==0.10.1 (from -r requirements.txt (line 10))
+  Obtaining dependency information for flask-debugtoolbar==0.10.1 from https://files.pythonhosted.org/packages/c9/3c/309073df635148f3536a5ed67940fb9b51ca67c1d6d2debafb81533201f3/Flask_DebugToolbar-0.10.1-py2.py3-none-any.whl.metadata
+  Downloading Flask_DebugToolbar-0.10.1-py2.py3-none-any.whl.metadata (5.4 kB)
+
+Collecting flask-dropzone==1.5.3 (from -r requirements.txt (line 11))
+  Obtaining dependency information for flask-dropzone==1.5.3 from https://files.pythonhosted.org/packages/91/71/4d067ac5d7bca0efa4e3295a377ca6d528a33eebdf6eddced25f27569484/Flask_Dropzone-1.5.3-py2.py3-none-any.whl.metadata
+
+  Downloading Flask_Dropzone-1.5.3-py2.py3-none-any.whl.metadata (1.5 kB)
+
+Collecting flask-mail==0.9.1 (from -r requirements.txt (line 12))
+  Downloading Flask-Mail-0.9.1.tar.gz (45 kB)
+
+     ---------------------------------------- 45.7/45.7 kB 2.4 MB/s eta 0:00:00
+
+  Installing build dependencies: started
+
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+
+  Preparing metadata (pyproject.toml): finished with status 'done'
+
+Collecting flask-migrate==2.5.2 (from -r requirements.txt (line 13))
+  Obtaining dependency information for flask-migrate==2.5.2 from https://files.pythonhosted.org/packages/4b/22/d20a105f13c58fe590ef38ac59d5cabc1a917549ea8f90b0ca7b4e84f6be/Flask_Migrate-2.5.2-py2.py3-none-any.whl.metadata
+
+  Downloading Flask_Migrate-2.5.2-py2.py3-none-any.whl.metadata (946 bytes)
+
+Collecting flask-sqlalchemy==2.5.1 (from -r requirements.txt (line 14))
+  Obtaining dependency information for flask-sqlalchemy==2.5.1 from https://files.pythonhosted.org/packages/26/2c/9088b6bd95bca539230bbe9ad446737ed391aab9a83aff403e18dded3e75/Flask_SQLAlchemy-2.5.1-py2.py3-none-any.whl.metadata
+
+  Downloading Flask_SQLAlchemy-2.5.1-py2.py3-none-any.whl.metadata (3.1 kB)
+
+Collecting flask-wtf==0.14.2 (from -r requirements.txt (line 15))
+  Obtaining dependency information for flask-wtf==0.14.2 from https://files.pythonhosted.org/packages/60/3a/58c629472d10539ae5167dc7c1fecfa95dd7d0b7864623931e3776438a24/Flask_WTF-0.14.2-py2.py3-none-any.whl.metadata
+
+  Downloading Flask_WTF-0.14.2-py2.py3-none-any.whl.metadata (1.8 kB)
+
+Collecting flask==1.0 (from -r requirements.txt (line 16))
+  Obtaining dependency information for flask==1.0 from https://files.pythonhosted.org/packages/55/b1/4365193655df97227ace49311365cc296e74b60c7f5c63d23cd30175e2f6/Flask-1.0-py2.py3-none-any.whl.metadata
+  Downloading Flask-1.0-py2.py3-none-any.whl.metadata (4.2 kB)
+
+Collecting greenlet==1.0.0 (from -r requirements.txt (line 17))
+  Downloading greenlet-1.0.0.tar.gz (84 kB)
+     -------------------------------------- 84.5/84.5 kB 473.2 kB/s eta 0:00:00
+
+  Installing build dependencies: started
+
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+
+  Preparing metadata (pyproject.toml): finished with status 'done'
+
+Collecting itsdangerous==1.1.0 (from -r requirements.txt (line 18))
+  Obtaining dependency information for itsdangerous==1.1.0 from https://files.pythonhosted.org/packages/76/ae/44b03b253d6fade317f32c24d100b3b35c2239807046a4c953c7b89fa49e/itsdangerous-1.1.0-py2.py3-none-any.whl.metadata
+
+  Downloading itsdangerous-1.1.0-py2.py3-none-any.whl.metadata (3.1 kB)
+Collecting jinja2==2.11.3 (from -r requirements.txt (line 19))
+  Obtaining dependency information for jinja2==2.11.3 from https://files.pythonhosted.org/packages/7e/c2/1eece8c95ddbc9b1aeb64f5783a9e07a286de42191b7204d67b7496ddf35/Jinja2-2.11.3-py2.py3-none-any.whl.metadata
+
+  Downloading Jinja2-2.11.3-py2.py3-none-any.whl.metadata (3.5 kB)
+
+Collecting jsmin==2.2.2 (from -r requirements.txt (line 20))
+  Downloading jsmin-2.2.2.tar.gz (12 kB)
+  Installing build dependencies: started
+
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'error'
+  error: subprocess-exited-with-error
+  
+  Getting requirements to build wheel did not run successfully.
+  exit code: 1
+  
+  [3 lines of output]
+  C:\Users\keshav\AppData\Local\Temp\pip-build-env-mmg9yq97\overlay\Lib\site-packages\setuptools\_distutils\dist.py:270: UserWarning: Unknown distribution option: 'test_suite'
+    warnings.warn(msg)
+  error in jsmin setup command: use_2to3 is invalid.
+  [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: subprocess-exited-with-error
+
+Getting requirements to build wheel did run successfully.
+exit code: 0
+
+See above for output.
+
+note: This error originates from a subprocess, and is likely not a problem with pip.
+
+
+Finished: SUCCESS

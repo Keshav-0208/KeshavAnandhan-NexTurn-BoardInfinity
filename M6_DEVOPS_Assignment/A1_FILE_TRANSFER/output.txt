@@ -1,0 +1,16 @@
+Started by user keshav a
+Running as SYSTEM
+Building in workspace D:\jenkins_home\workspace\Windows File Transfer Automation
+No emails were triggered.
+[Windows File Transfer Automation] $ cmd /c call C:\Users\keshav\AppData\Local\Temp\jenkins14723631446646176686.bat
+
+D:\jenkins_home\workspace\Windows File Transfer Automation>xcopy D:\source-directory D:\target-directory /E /I /H /Y 
+D:\source-directory\doc - 1.txt
+1 File(s) copied
+
+D:\jenkins_home\workspace\Windows File Transfer Automation>exit 0 
+Email was triggered for: Always
+Sending email for trigger: Always
+Sending email to: keshava0208@gmail.com
+Not sent to the following valid addresses: keshava0208@gmail.com
+Finished: SUCCESS
