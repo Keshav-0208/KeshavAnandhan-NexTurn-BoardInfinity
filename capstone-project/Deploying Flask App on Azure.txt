@@ -1,0 +1,38 @@
+Deploying a Flask App on Azure
+
+1. Set Up Azure Account
+   Go to Azure Portal, sign up, or log in.
+
+2. Install Tools
+   Install Azure CLI, Git, and Python.
+
+3. Prepare Flask App
+   Ensure you have a requirements.txt file and a Procfile with "web: gunicorn app:app".
+
+4. Initialize Git Repository
+   git init
+   git add .
+   git commit -m "Initial commit"
+
+5. Create and Deploy Azure App Service
+   az login
+   az group create --name MyResourceGroup --location eastus
+   az appservice plan create --name MyPlan --resource-group MyResourceGroup --sku F1
+   az webapp create --resource-group MyResourceGroup --plan MyPlan --name MyFlaskApp --runtime "PYTHON:3.9"
+
+6. Push Code to Azure
+   az webapp deployment source config-local-git --name MyFlaskApp --resource-group MyResourceGroup
+   git remote add azure <GIT_URL>
+   git push azure master
+
+7. Configure and Run
+   az webapp config set --resource-group MyResourceGroup --name MyFlaskApp --startup-file "gunicorn -w 4 app:app"
+   az webapp restart --name MyFlaskApp --resource-group MyResourceGroup
+
+8. Access Your App
+   az webapp show --resource-group MyResourceGroup --name MyFlaskApp --query defaultHostName --output tsv
+   Open the URL in your browser.
+
+9. Monitor Logs
+   az webapp log tail --name MyFlaskApp --resource-group MyResourceGroup
+
